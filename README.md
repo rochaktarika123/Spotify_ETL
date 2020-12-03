@@ -1,1 +1,2 @@
-# Spotify_ETL
+# Spotify ETL and Weekly Summary Email
+Building an ETL out of Spotify API and a weekly summary email. I built a program that extracts data from my Spotify Account with [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/). Specifically, I am interested in extracting my listening history. I then transform the data using python to clean it up, create unique identifiers and load it into a Postgresql database. The loading piece of the ETL is a Postgesql databse that is on my local machine. From there I utilized SQL to query the data and python to automate a weekly email that gets sent to my email giving a summary of my Spotify listening for that week. I build the metrics in that email around the metrics seen in Spotify Wrapped ['https://2020.byspotify.com/'].
